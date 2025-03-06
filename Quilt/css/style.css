@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ 
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(3, 1fr);  
+    height: 100vh; 
+    width: 100%;  
+    gap: 5px;  
+    padding: 5px;  
+}
+
+.nested-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  
+    grid-template-rows: repeat(2, 1fr);  
+    height: 100%;  
+    width: 100%;  
+    gap: 5px;  
+}
+
+ 
+.item1 { background-color: #FF5733; } 
+.item2 { background-color: #ff24a4; }
+.item3 { background-color: #3357FF; } 
+.item4 { background-color: #FFFF33; } 
+.item5 { background-color: #FF33FF; } 
+.item6 { background-color: #33FFFF; } 
+.item7 { background-color: #3aef16; } 
+.item8 { background-color: #800080; } 
+.item9 { background-color: #ff00e6; }
+
+ 
+.nested-item1 { background-color: #FFC300; }
+.nested-item2 { background-color: #ff0048; }
+.nested-item3 { background-color: #2f00ff; }
+.nested-item4 { background-color: #3aef16; }
+.nested-item5 { background-color: #DAF7A6; }
+.nested-item6 { background-color: #FFC0CB; }
+.nested-item7 { background-color: #00FFFF; }
+.nested-item8 { background-color: #4B0082; }
+.nested-item9 { background-color: #0088ff; }
+.nested-item10 { background-color: #3aef16; }
+.nested-item11 { background-color: #132006; }
+.nested-item12 { background-color: #ff0033; }
+.nested-item13 { background-color: #008fd1; }
+.nested-item14 { background-color: #3aef16; }
+.nested-item15 { background-color: #ff0000; }
+.nested-item16 { background-color: #ff0000; }
+
+ 
+.nested-item1 {
+    background-image: url('https://digital-photography-school.com/wp-content/uploads/flickr/14718892840_10bba8ff6d_o-600x403.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.nested-item6 {
+    background-image: url('https://digital-photography-school.com/wp-content/uploads/flickr/14718892840_10bba8ff6d_o-600x403.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.nested-item11 {
+    background-image: url('https://digital-photography-school.com/wp-content/uploads/flickr/14718892840_10bba8ff6d_o-600x403.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.nested-item16 {
+    background-image: url('https://digital-photography-school.com/wp-content/uploads/flickr/14718892840_10bba8ff6d_o-600x403.jpg');
+    background-size: cover;
+    background-position: center;
+}
