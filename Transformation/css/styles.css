@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    
+  }
+  
+  body {
+    background-color: #111;
+    color: hsl(0, 2%, 57%);
+    text-align: center;
+    
+  }
+  
+  .grid-container {
+    display: grid;
+    
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    height: 100vh;                         
+    width: 100%;                          
+  }
+  
+  /* The following sets two transitions: a transform and background-color change */
+  .grid-item {
+    transition: transform 0.5s ease, background-color 0.5s ease;
+    
+    background-position: center;
+    border: 2px solid #bf1414;
+  }
+  
+  /* This transition happens when user HOVERS OVER grid item */
+  .grid-item:hover {
+    
+    border: 2px solid #14bf28;
+    transform: scale(1.1) rotate(15deg);
+    background-color: rgba(0, 0, 0, 0.3);
+    background-size: cover;
+    
+  }
+  
+  /* This transition happens when user CLICKS on grid item */
+  .grid-item:active {
+    transform: scale(1.1) rotate(45deg);
+    background-image: url("https://i.kym-cdn.com/entries/icons/facebook/000/033/369/Dancing_Rat_0-25_screenshot.jpg");
+    background-color: rgba(233, 0, 105, 0.6);
+  }
+  
+  
