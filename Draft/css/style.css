@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: black;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    font-family: 'Arial', sans-serif;
+    transition: background 2s;
+  }
+  
+  .background-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 8rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.2);
+    white-space: nowrap;
+    user-select: none;
+    pointer-events: none;
+    animation: slowFade 8s infinite alternate;
+    z-index: 1;
+  }
+  
+  @keyframes slowFade {
+    0% { opacity: 0.1; }
+    100% { opacity: 0.25; }
+  }
+  
+  .note {
+    position: absolute;
+    font-size: 2.5rem;
+    animation: floatUp 3s ease-out forwards;
+    pointer-events: none;
+    user-select: none;
+    z-index: 2;
+  }
+  
+  @keyframes floatUp {
+    0% { transform: translateY(0) scale(1); opacity: 1; }
+    100% { transform: translateY(-100px) scale(1.5); opacity: 0; }
+  }
+  
