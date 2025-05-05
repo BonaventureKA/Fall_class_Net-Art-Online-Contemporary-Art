@@ -3,9 +3,6 @@ const poemElement = document.getElementById('poem');
 const notes = ['♪', '♫', '♩', '♬', '♭', '♮', '♯'];
 const colors = ['#0f0', '#0ff', '#f0f', '#ff0'];
 
-// TEST: This should alert if JS loads
-alert("JavaScript is working!");
-document.body.innerHTML += "<h2>JS is working!</h2>";
 
 // Enhanced word bank with nature/tech fusion
 const wordBank = {
